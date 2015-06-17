@@ -1,0 +1,9 @@
+﻿{
+    "root": ".",
+    "pluginsDir":"plugins",
+    "configPrefix": "config.",
+    "modesDir": "app/config/modes",
+    "modesConfig": "app/config/modes/config.json",
+    "tmpDir": "!tmp",
+    "appConfig": "app/config/config.json"
+}

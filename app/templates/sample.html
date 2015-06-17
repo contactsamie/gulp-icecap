@@ -1,0 +1,49 @@
+﻿<style>
+    #ajax-loader-progress {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 99999999;
+        opacity: 0.5;
+    }
+
+    .ajax-loader-data-common {
+        width: 400px;
+        height: 40px;
+        z-index: 999999999;
+        position: fixed;
+        padding-right: 20px;
+    }
+     #ajax-loader-data-center {
+      
+        left: 50%;
+        top: 50%;
+        margin-top: -20px; /* make this half your image/element height */
+        margin-left: -100px; /* make this half your image/element width */
+        width: auto;
+        height: auto;
+    }
+    #ajax-loader-data-bottom-left {
+       
+        right: 30px;
+        top:0px;
+        width: auto;
+        height: auto;
+    }
+</style>
+<div ng-show="isloading && (!nobackdrop&&!isBackgroundProcess)" id="ajax-loader-progress">
+
+</div>
+<div ng-show="isloading" class="ajax-loader-data-common" id="{{isBackgroundProcess?'ajax-loader-data-bottom-left':'ajax-loader-data-center'}}">
+    <div ng-show="premessage" class="text-success">{{premessage?(premessage+' .... Done'):''}}</div>
+    <span>
+        <span ng-transclude></span>
+        &nbsp;&nbsp;
+        <!--<img src="images/ajaxprogress.gif"><br />--><i style="font-size:45px" class="fa fa-spinner fa-spin"></i>
+    </span>
+    &nbsp;&nbsp;
+    <strong style="color:#fff">{{message}}</strong>
+</div>

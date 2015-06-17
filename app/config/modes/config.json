@@ -1,0 +1,7 @@
+﻿{
+  "mode":"debug",
+  "modes": [
+    "debug",
+    "release"
+  ]
+}

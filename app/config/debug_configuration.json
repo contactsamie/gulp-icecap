@@ -1,0 +1,35 @@
+﻿{
+  "tmpDir": "tmp",
+  "dist":"dist",
+  "root":"app",
+  "sections":[
+    {
+      "type":"script",
+      "path":"scripts/vendor/jquery"
+    } ,
+     {
+      "type":"script",
+      "path":"scripts/vendor/bootstrap"
+    } ,
+     {
+      "type":"script",
+      "path":"scripts/vendor/angular"
+    } ,
+    {
+      "type":"style",
+      "path":"styles"
+    }  ,
+    {
+      "type":"asset",
+      "path":"fonts"
+    },
+    {
+      "type":"asset",
+      "path":"templates"
+    } ,
+    {
+      "type":"image",
+      "path":"images"
+    }       
+  ]
+}
