@@ -2,7 +2,7 @@
   "name": "gulp-icecap",
   "version": "0.0.1",
   "description": "Front End Build Framework",
-  "main": "gulpfile.js",
+  "main": "gulp-icecap.js",
   "scripts": {
     "test": "gulp man"
   },
